@@ -44,7 +44,7 @@ class Student(val name: String, val scores: IntArray) {
             if (score < 40) return false
         }
         return true
-    }
+    } // deyisiklik
 }
 fun main(){
     var students = arrayOf(
