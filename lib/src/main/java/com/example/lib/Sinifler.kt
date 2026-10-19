@@ -45,6 +45,7 @@ class Student(val name: String, val scores: IntArray) {
         }
         return true
     } // deyisiklik
+    //fsdufisbdhdf
 }
 fun main(){
     var students = arrayOf(
