@@ -1,9 +1,13 @@
 package com.example.lib
 
 class Products(val name: String, var price: Double, var stock: Int){
+    //Amazing
     fun isAvailable(): Boolean{
         return stock > 0
     }
+
+    //Well
+
     fun sell(amount: Int): Boolean{
         return when {
             (amount <= 0)-> {
@@ -30,7 +34,7 @@ class Products(val name: String, var price: Double, var stock: Int){
 class Shop(var products: Array<Products>, var revenue: Double = 0.0){
     fun findProduct(name: String): Products?{
         for (product in products){
-            if (product.name.equals(name, ignoreCase = true)) { // AI yazdi  Böyük/kiçik hərflərə həssas olmadan ad müqayisəsi
+            if (product.name.equals(name, ignoreCase = true)) { // AI yazdi  Böyük/kiçik hərflərə həssas olmadan ad müqayisəsi //aferin
                 return product
             }
         }
